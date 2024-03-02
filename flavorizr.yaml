@@ -1,0 +1,29 @@
+app:
+  android:
+    flavorDimensions: "flavor-type"
+
+flavors:
+  tracer:
+    app:
+      name: "Tracer"
+    android:
+      applicationId: "com.demo.tracer"
+      firebase:
+        config: ".firebase/tracer/google-services.json"
+    ios:
+      bundleId: "com.demo.tracer"
+      firebase:
+        config: ".firebase/tracer/GoogleService-Info.plist"
+
+  tracker:
+    app:
+      name: "Tracker"
+
+    android:
+      applicationId: "com.demo.tracker"
+      firebase:
+        config: ".firebase/tracker/google-services.json"
+    ios:
+      bundleId: "com.demo.tracker"
+      firebase:
+        config: ".firebase/tracker/GoogleService-Info.plist"
